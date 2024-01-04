@@ -12,4 +12,9 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('@ecommerce/products').then((c) => c.ProductsComponent),
   },
+  {
+    path: 'orders',
+    loadComponent: () =>
+      import('@ecommerce/orders').then((c) => c.OrdersComponent),
+  },
 ];
